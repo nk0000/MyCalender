@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:id="@+id/radio">
+
+        <RadioButton
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/create"
+            android:text="Create Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/Login"
+            android:text="Login. Already a User?"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/cont"
+            android:text="Continue"
+            android:layout_below="@+id/Login"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By creating account or logging in, you agree to the App's Terms and Conditions of Use and Privacy Policy."
+            />
+
+    </RadioGroup>
+</RelativeLayout>
